@@ -21,7 +21,7 @@ class _CameraPageState extends State<CameraPage> {
 
   @override
   void dispose() {
-    appCameraController.cameraController.dispose();
+    appCameraController.cameraController!.dispose();
     super.dispose();
   }
 
@@ -40,7 +40,7 @@ class _CameraPageState extends State<CameraPage> {
                 child: Stack(
                   alignment: Alignment.bottomCenter,
                   children: [
-                    CameraPreview(appCameraController.cameraController),
+                    CameraPreview(appCameraController.cameraController!),
                     Padding(
                       padding: const EdgeInsets.all(25),
                       child: FloatingActionButton(

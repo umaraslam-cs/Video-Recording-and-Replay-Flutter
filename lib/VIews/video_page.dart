@@ -18,7 +18,7 @@ class _VideoPageState extends State<VideoPage> {
 
   @override
   void dispose() {
-    appCameraController.videoPlayerController.dispose();
+    appCameraController.videoPlayerController!.dispose();
     super.dispose();
   }
 
@@ -46,7 +46,7 @@ class _VideoPageState extends State<VideoPage> {
             if (state.connectionState == ConnectionState.waiting) {
               return const Center(child: CircularProgressIndicator());
             } else {
-              return VideoPlayer(appCameraController.videoPlayerController);
+              return VideoPlayer(appCameraController.videoPlayerController!);
             }
           },
         ),
