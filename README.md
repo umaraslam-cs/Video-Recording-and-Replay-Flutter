@@ -1,6 +1,6 @@
 # camera_demo
 
-A new Flutter project.
+Simple video recorder which records video with front camera and plays recorded video.
 
 ## Getting Started
 
